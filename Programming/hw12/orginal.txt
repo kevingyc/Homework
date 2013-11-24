@@ -1,0 +1,48 @@
+Inital values of counters:
+The copy constructor is called 0 times.
+The assignment operator is called 0 times.
+Test (1): constructor
+
+Matrix A is:
+       3       0       0
+       0       3       0
+       0       0       3
+Current values of counters:
+The copy constructor is called 0 times.
+The assignment operator is called 0 times.
+
+Matrix B is:
+       4       0       0       0
+       0       4       0       0
+       0       0       4       0
+       0       0       0       4
+Current values of counters:
+The copy constructor is called 0 times.
+The assignment operator is called 0 times.
+
+Test (2-1): copy constructor, C(B)
+Current values of counters:
+The copy constructor is called 1 times.
+The assignment operator is called 0 times.
+
+Test (2-2): operator = (Matrix), C = A
+Current values of counters:
+The copy constructor is called 1 times.
+The assignment operator is called 1 times.
+
+Test (3-1): C = A + A
+       6       0       0
+       0       6       0
+       0       0       6
+Current values of counters:
+The copy constructor is called 1 times.
+The assignment operator is called 2 times.
+
+Test (3-2): C = B + B
+       8       0       0       0
+       0       8       0       0
+       0       0       8       0
+       0       0       0       8
+Current values of counters:
+The copy constructor is called 1 times.
+The assignment operator is called 3 times.

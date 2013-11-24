@@ -1,0 +1,9 @@
+Experiment B1
+Equal
+Because static type does not effect the counter. And it need return static type variable, otherwise, the data will be destroyed.
+
+Experiment B2 
+Slow
+Because the counter of copy constructor is call 3 times, it is 2 times more than the original.
+
+When return temp, it will call the destructor and create an object to save the returned things. It will call copy constructor to do this. So, it will add 2 to the counter of copy constructor.

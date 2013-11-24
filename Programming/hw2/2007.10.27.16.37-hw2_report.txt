@@ -1,0 +1,24 @@
+Set variables n1,n2,gcd
+
+Input the two numbers,store in n1 and n2
+ 
+
+If the two numbers are both not be equal to zero
+	Run the while loop
+
+		While the remainder(store in n1 and n2) is not be equal to zero
+
+			If n1 is bigger than n2
+				n1 divide by n2, take the remainder
+				Store the remainder into n1
+			Else 			
+				n2 divide by n1, take the remainder
+				Store the remainder into n2
+		
+	Adding n1 to n2,store in gcd
+	Print the GCD
+
+Else
+	Print the error messenger
+
+	
