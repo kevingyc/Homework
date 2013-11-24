@@ -1,0 +1,7 @@
+(defun value (arr)(setf x 1 n (length arr) vec (make-array (length arr)))
+(do ((x 0 (+ x 1)))((null arr))(setf (svref vec x) (car arr))(setf arr (cdr arr)))
+(setf maxv (max (svref vec 0) (svref vec 1)) minv (min (svref vec 0) (svref vec 1)))
+(if (< n 1) nil (jud maxv minv vec 2 n)))
+(defun jud (mx mn arr n len)(if (eql n len) (printv mx mn) (setf mx (max mx (svref arr n)) mn (min mn (svref arr n))))
+(if (eql n len) nil (jud mx mn arr (+ n 1) len)))
+(defun printv (x y)(format t "Max is ~A Min is ~A" x y))

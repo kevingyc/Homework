@@ -1,0 +1,14 @@
+Homework
+Suppose the function pos+ takes a list and returns a list of each
+element plus its position:
+> (pos+ '(7 5 1 4))
+(7 6 3 7)
+Define this function using
+(a) recursion, (b) iteration, (c) mapcar.
+(Due March 17)
+
+Bonus assignment
+Write a C program to find the shortest path in a network, just like
+the program in page 38, and analyze the differences between
+these two programs
+(Due March 24)

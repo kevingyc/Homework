@@ -1,0 +1,2 @@
+(defun plus (l n x v)
+	(setf x (append (subseq x 0 n) (list v) (subseq x n))))

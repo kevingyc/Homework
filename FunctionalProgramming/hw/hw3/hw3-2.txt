@@ -1,0 +1,31 @@
+(defun value (arr)(setf n 2)	
+	(if (null arr) nil ((setf max (max (svref arr 0) (svref arr 1)) min (min (svref arr 0) (svref arr 1)))(jud max min vec n))))
+
+
+
+(defun jud (mx mn com n)
+	(if (null com) nil 
+			((if (> com mx) (setf mx com) nil)
+			(if (< com mn) (setf mn com) nil)
+			(jud mx mn (svref arr (+ n 1)) (+ n 1))))
+
+
+(defun jud (mx mn arr n)
+	(if (null arr) nil 
+			((setf mx (max mx (svref arr n)) mn (min mn (svref arr n)))
+			(jud mx mn arr (+ n 1))))
+
+
+(load "D:\\kevin\\NTNU\\9602\\lisp\\hw\\hw3.lsp")
+
+
+(defun value (arr)(setf x 1 n (length arr) vec (make-array (length arr)))
+(do ((x 0 (+ x 1)))((null arr))(setf (svref vec x) (car arr))(setf arr (cdr arr)))
+(setf maxv (max (svref vec 0) (svref vec 1)) minv (min (svref vec 0) (svref vec 1))
+(if (> n 1) nil (jud maxv minv [vec] 2 n)))
+
+
+
+(defun jud (mx mn [arr] n len)(if (eql n len) nil (setf mx (max mx (svref arr n)) mn (min mn (svref arr n)))(jud mx mn [arr] (+ n 1) len)))
+
+(defun jud (mx mn [arr] n len) (format t "~A ~A" (svref arr 0) mx))
